@@ -11,6 +11,7 @@ video-subtitle-generator/
 ├── extract_audio.py
 ├── transcribe_audio.py
 ├── generate_subtitles.py
+├── add_subtitles.py
 ├── requirements.txt
 └── README.md
 ```
@@ -72,6 +73,7 @@ python main.py
 * `extract_audio.py` – Extracts mono 16kHz audio from a video using FFmpeg.
 * `transcribe_audio.py` – Uses `faster-whisper` to transcribe the audio.
 * `generate_subtitles.py` – Generates `.srt` subtitle file from the transcription segments.
+* `generate_subtitles.py` – uses FFmpeg to overlay the generated subtitles directly onto the video and save a new video file with hardcoded captions.
 * `main.py` – Orchestrates the whole process.
 
 ---
